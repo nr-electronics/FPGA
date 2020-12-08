@@ -1,0 +1,142 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2017  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Intel and sold by Intel or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+# Date created = 09:18:27  December 08, 2020
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Test_EPM240_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX II"
+set_global_assignment -name DEVICE EPM240T100C5
+set_global_assignment -name TOP_LEVEL_ENTITY Test_EPM240
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:18:27  DECEMBER 08, 2020"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.0.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR "-1"
+set_global_assignment -name POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR 3.3V
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (VHDL)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name BDF_FILE Test_EPM240.bdf
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "PASSIVE SERIAL"
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_global_assignment -name LL_ROOT_REGION ON -entity max2 -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -entity max2 -section_id "Root Region"
+set_location_assignment PIN_73 -to led[0]
+set_location_assignment PIN_71 -to led[1]
+set_location_assignment PIN_69 -to led[2]
+set_location_assignment PIN_68 -to led[3]
+set_location_assignment PIN_67 -to led[4]
+set_location_assignment PIN_66 -to led[5]
+set_location_assignment PIN_64 -to led[6]
+set_location_assignment PIN_62 -to led[7]
+set_location_assignment PIN_18 -to key[0]
+set_location_assignment PIN_17 -to key[1]
+set_location_assignment PIN_16 -to key[2]
+set_location_assignment PIN_15 -to key[3]
+set_location_assignment LC_X6_Y2_N6 -to "lpm_counter:inst9|cntr_90g:auto_generated|safe_q[4]"
+set_location_assignment LC_X6_Y2_N6 -to "lpm_counter:inst9|cntr_90g:auto_generated|counter_cella4~COUT"
+set_location_assignment PIN_99 -to f[99]
+set_location_assignment PIN_100 -to f[100]
+set_location_assignment PIN_12 -to dn2
+set_location_assignment PIN_14 -to dp2
+set_location_assignment PIN_75 -to clk1
+set_location_assignment PIN_61 -to f[61]
+set_location_assignment PIN_37 -to f[37]
+set_location_assignment PIN_90 -to f[90]
+set_location_assignment PIN_39 -to f[39]
+set_location_assignment PIN_88 -to f[88]
+set_location_assignment PIN_6 -to f[6]
+set_location_assignment PIN_19 -to f[19]
+set_location_assignment PIN_1 -to f[1]
+set_location_assignment PIN_21 -to f[21]
+set_location_assignment PIN_2 -to f[2]
+set_location_assignment PIN_4 -to f[4]
+set_location_assignment PIN_5 -to f[5]
+set_location_assignment PIN_7 -to f[7]
+set_location_assignment PIN_8 -to f[8]
+set_location_assignment PIN_20 -to f[20]
+set_location_assignment PIN_98 -to f[98]
+set_location_assignment PIN_97 -to f[97]
+set_location_assignment PIN_95 -to f[95]
+set_location_assignment PIN_96 -to f[96]
+set_location_assignment PIN_92 -to f[92]
+set_location_assignment PIN_91 -to f[91]
+set_location_assignment PIN_89 -to f[89]
+set_location_assignment PIN_3 -to f[3]
+set_location_assignment PIN_85 -to f[85]
+set_location_assignment PIN_86 -to f[86]
+set_location_assignment PIN_87 -to f[87]
+set_location_assignment PIN_70 -to f[70]
+set_location_assignment PIN_72 -to f[72]
+set_location_assignment PIN_74 -to f[74]
+set_location_assignment PIN_76 -to f[76]
+set_location_assignment PIN_77 -to f[77]
+set_location_assignment PIN_78 -to f[78]
+set_location_assignment PIN_81 -to f[81]
+set_location_assignment PIN_82 -to f[82]
+set_location_assignment PIN_83 -to f[83]
+set_location_assignment PIN_26 -to f[26]
+set_location_assignment PIN_27 -to f[27]
+set_location_assignment PIN_29 -to f[29]
+set_location_assignment PIN_30 -to f[30]
+set_location_assignment PIN_34 -to f[34]
+set_location_assignment PIN_84 -to f[84]
+set_location_assignment PIN_28 -to f[28]
+set_location_assignment PIN_36 -to f[36]
+set_location_assignment PIN_33 -to f[33]
+set_location_assignment PIN_35 -to f[35]
+set_location_assignment PIN_38 -to f[38]
+set_location_assignment PIN_40 -to f[40]
+set_location_assignment PIN_41 -to f[41]
+set_location_assignment PIN_42 -to f[42]
+set_location_assignment PIN_43 -to f[43]
+set_location_assignment PIN_44 -to f[44]
+set_location_assignment PIN_47 -to f[47]
+set_location_assignment PIN_48 -to f[48]
+set_location_assignment PIN_49 -to f[49]
+set_location_assignment PIN_50 -to f[50]
+set_location_assignment PIN_51 -to f[51]
+set_location_assignment PIN_52 -to f[52]
+set_location_assignment PIN_53 -to f[53]
+set_location_assignment PIN_54 -to f[54]
+set_location_assignment PIN_55 -to f[55]
+set_location_assignment PIN_56 -to f[56]
+set_location_assignment PIN_57 -to f[57]
+set_location_assignment PIN_58 -to f[58]

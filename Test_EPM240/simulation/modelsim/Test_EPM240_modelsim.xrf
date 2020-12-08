@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/nr.old/Desktop/Test_EPM240/Test_EPM240.bdf
+source_file = 1, C:/Users/nr.old/Desktop/Test_EPM240/db/Test_EPM240.cbx.xml
+design_name = Test_EPM240
+instance = comp, \key[3]~I\, key[3], Test_EPM240, 1
+instance = comp, \key[1]~I\, key[1], Test_EPM240, 1
+instance = comp, \key[0]~I\, key[0], Test_EPM240, 1
+instance = comp, \key[2]~I\, key[2], Test_EPM240, 1
+instance = comp, \led[7]~I\, led[7], Test_EPM240, 1
+instance = comp, \led[6]~I\, led[6], Test_EPM240, 1
+instance = comp, \led[5]~I\, led[5], Test_EPM240, 1
+instance = comp, \led[4]~I\, led[4], Test_EPM240, 1
+instance = comp, \led[3]~I\, led[3], Test_EPM240, 1
+instance = comp, \led[2]~I\, led[2], Test_EPM240, 1
+instance = comp, \led[1]~I\, led[1], Test_EPM240, 1
+instance = comp, \led[0]~I\, led[0], Test_EPM240, 1

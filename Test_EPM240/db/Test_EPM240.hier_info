@@ -1,0 +1,15 @@
+|Test_EPM240
+led[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+led[4] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+led[5] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+led[6] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+led[7] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+key[0] => inst.IN0
+key[1] => inst12.IN0
+key[2] => inst.IN1
+key[3] => inst12.IN1
+
+
