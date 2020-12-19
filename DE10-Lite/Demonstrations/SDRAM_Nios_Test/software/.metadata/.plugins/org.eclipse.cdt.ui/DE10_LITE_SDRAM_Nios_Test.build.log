@@ -1,0 +1,9 @@
+10:02:34 **** Incremental Build of configuration Nios II for project DE10_LITE_SDRAM_Nios_Test ****
+make all 
+Info: Building ../DE10_LITE_SDRAM_Nios_Test_bsp/
+D:/altera/16.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DE10_LITE_SDRAM_Nios_Test_bsp/
+[BSP build complete]
+[DE10_LITE_SDRAM_Nios_Test build complete]
+
+10:02:35 Build Finished (took 1s.344ms)
+
