@@ -1,0 +1,11 @@
+.\out\ft245rom.o: ..\src\ft245rom.c
+.\out\ft245rom.o: ..\drv\base.h
+.\out\ft245rom.o: ..\drv\platform_config.h
+.\out\ft245rom.o: C:\Users\nr.new\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\stm32f10x.h
+.\out\ft245rom.o: C:\Users\nr.new\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h
+.\out\ft245rom.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\out\ft245rom.o: C:\Users\nr.new\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h
+.\out\ft245rom.o: C:\Users\nr.new\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h
+.\out\ft245rom.o: C:\Users\nr.new\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h
+.\out\ft245rom.o: C:\Users\nr.new\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h
+.\out\ft245rom.o: ..\sys\stm32f10x_conf.h

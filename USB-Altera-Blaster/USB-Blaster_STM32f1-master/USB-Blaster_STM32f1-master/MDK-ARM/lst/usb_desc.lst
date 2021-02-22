@@ -1,0 +1,4 @@
+L 1 "..\usb\usb_desc.c"
+N/* Includes ------------------------------------------------------------------*/
+C "..\usb\usb_desc.c" 2 21 cannot open source input file "usb_lib.h": No such file or directory
+N#include "usb_lib.h"

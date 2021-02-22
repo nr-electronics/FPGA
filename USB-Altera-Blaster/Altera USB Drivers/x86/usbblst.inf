@@ -1,0 +1,82 @@
+; Installation INF for Altera USB-Blaster Device Driver
+;
+; Copyright (c) 2000-2007 FTDI Ltd.
+; Copyright (c) 2004-2007 Altera Corporation
+;
+
+[Version]
+Signature="$Windows NT$"
+DriverPackageType=PlugAndPlay
+DriverPackageDisplayName=%DESC%
+Class=USB
+ClassGUID={36fc9e60-c465-11cf-8056-444553540000}
+Provider=%Altera%
+CatalogFile=ftdibus.cat
+DriverVer=05/19/2006,2.00.00
+
+[SourceDisksNames]
+1=%DriversDisk%,,,
+
+[SourceDisksFiles]
+ftdibus.sys = 1
+ftbusui.dll = 1
+ftd2xx.dll = 1
+
+[Manufacturer]
+%Altera%=AlteraHw
+
+[AlteraHw]
+%USB\VID_09FB&PID_6001.DeviceDesc%=AlteraUSBBlaster,USB\VID_09FB&PID_6001
+%USB\VID_09FB&PID_6002.DeviceDesc%=AlteraUSBBlaster,USB\VID_09FB&PID_6002
+%USB\VID_09FB&PID_6003.DeviceDesc%=AlteraUSBBlaster,USB\VID_09FB&PID_6003
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[DestinationDirs]
+AlteraUSBBlaster.NT.Copy = 10,system32\drivers
+AlteraUSBBlaster.NT.Copy2 = 10,system32
+
+[AlteraUSBBlaster.NT]
+CopyFiles=AlteraUSBBlaster.NT.Copy,AlteraUSBBlaster.NT.Copy2
+AddReg=AlteraUSBBlaster.NT.AddReg
+
+[AlteraUSBBlaster.NT.HW]
+AddReg=AlteraUSBBlaster.NT.HW.AddReg
+
+[AlteraUSBBlaster.NT.HW.AddReg]
+HKR,,"ConfigData",0x00010001,0
+
+[AlteraUSBBlaster.NT.Services]
+AddService = AlteraUSBBlaster, 0x00000002, AlteraUSBBlaster.NT.AddService
+
+[AlteraUSBBlaster.NT.AddService]
+DisplayName = %SvcDesc%
+ServiceType = 1 ; SERVICE_KERNEL_DRIVER
+StartType = 3 ; SERVICE_DEMAND_START
+ErrorControl = 1 ; SERVICE_ERROR_NORMAL
+ServiceBinary = %10%\system32\drivers\ftdibus.sys
+LoadOrderGroup = Base
+
+[AlteraUSBBlaster.NT.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,ftdibus.sys
+HKR,,EnumPropPages32,,"ftbusui.dll,FTBUSUIPropPageProvider"
+
+[AlteraUSBBlaster.NT.Copy]
+ftdibus.sys
+
+[AlteraUSBBlaster.NT.Copy2]
+ftbusui.dll
+ftd2xx.dll
+
+[Strings]
+Altera="Altera"
+DESC="CDM Driver Package"
+DriversDisk="Altera USB-Blaster Drivers Disk"
+USB\VID_09FB&PID_6001.DeviceDesc="Altera USB-Blaster"
+USB\VID_09FB&PID_6002.DeviceDesc="Altera Cubic Cyclonium"
+USB\VID_09FB&PID_6003.DeviceDesc="Altera Nios II Evaluation Board"
+WINUN="Software\Microsoft\Windows\CurrentVersion\Uninstall"
+SvcDesc="Altera USB-Blaster Device Driver"
+ClassName="USB"
